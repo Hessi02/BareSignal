@@ -5,7 +5,8 @@ A header-only implemenation of Signals & Slot mechanism.
 ## Usage
 
 ```cpp
-class A : public BareSignal::SignalObject, std::enable_shared_from_this<A>
+class A : public BareSignal::SignalObject,
+          public std::enable_shared_from_this<A>
 {
 public:
     void calculate(void) {
