@@ -18,7 +18,7 @@ private:
     }
 };
 
-class B : public SignalObject
+class B : public BareSignal::SignalObject
 {
 public:
     void handleSomeSignal(const int number) {
