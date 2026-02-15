@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
 
     SignalObject::connect(objA, &A::someSignal, objB, &B::handleSomeSignal);
     objA->calculate();
-    SignalObject::disconnect(objA, &A::numberAdded, objC, &C::onAddNumber);
+    SignalObject::disconnect(objA, &A::someSignal, objB, &B::handleSomeSignal);
     
     return 0;
 }
