@@ -14,7 +14,7 @@ public:
 
 private:
     void someSignal(const int number) {
-       executeAllCallbacks(shared_from_this(), &A::someSignal, number);
+        executeAllCallbacks(shared_from_this(), &A::someSignal, number);
     }
 };
 
